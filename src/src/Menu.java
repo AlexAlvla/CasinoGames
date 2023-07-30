@@ -1,3 +1,7 @@
+import Games.BlackJack;
+import Games.Roulette;
+import Games.ThreeCardPoker;
+
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -18,14 +22,14 @@ public class Menu {
 
     public void gameReferrer(){
             if (Objects.equals(this.game, "BlackJack")){
-                System.out.println("You picked BlackJack");
                 this.gameInput.close();
+                BlackJack.start();
             } else if (Objects.equals(this.game, "ThreeCardPoker")) {
-                System.out.println("You picked ThreeCardPoker");
                 this.gameInput.close();
+                ThreeCardPoker.start();
             } else if (Objects.equals(this.game, "Roulette")) {
-                System.out.println("You picked Roulette");
                 this.gameInput.close();
+                Roulette.start();
             } else {
                 System.out.println("Please enter an available Game!");
                 this.game = gameInput.nextLine();

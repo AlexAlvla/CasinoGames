@@ -1,9 +1,14 @@
 package Games;
 
+import Dealers.DealerBlackJack;
+
 public class BlackJack {
     public BlackJack(){
-        String[] values = {"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
-        String[] suit = {"Club", "Spade", "Diamond", "Heart"};
+        DealerBlackJack dealer = new DealerBlackJack();
+    }
+
+    public static void start(){
+        System.out.println("Welcome to BlackJack!");
     }
 
 }
